@@ -1,0 +1,24 @@
+
+// To remove errors in phpmyadmin
+$cfg['SendErrorReports'] = 'never';
+
+
+
+backend and web app for omni chat app
+
+backend - python django
+
+frontend - react
+
+api's - provided by gpt4free github repo
+
+docker pull hlohaus789/g4f
+
+docker run -p 8080:8080 -p 1337:1337 -p 7900:7900 --shm-size="2g" hlohaus789/g4f:latest
+
+Workflow idea - frontend -(query)-> backend --> docker image
+
+Currently don't know how to make chat completion work, should the docker img run in background or not needed.
+
+
+

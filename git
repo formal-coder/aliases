@@ -1,0 +1,6 @@
+alias gitsoftreset="git reset --soft HEAD~"
+alias githardreset="git reset --hard HEAD~"
+
+To undo a merge:
+
+git merge --abort // [Since git version 1.7.4]

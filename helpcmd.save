@@ -1,0 +1,5 @@
+emulator -list-avds 
+git reset --hard HEAD~
+
+alias createlist = npx react-native run-android --list-devices
+alias forcecreatedir = mkdir -p android/app/src/release/java/com/rndiffapp/

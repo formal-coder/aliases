@@ -1,0 +1,14 @@
+py manage.py makemigrations members //command to actually create the table in the database
+py manage.py migrate //Django will create and execute an SQL statement, based on the content of the new file in the /migrations/ folder
+py manage.py sqlmigrate members 0001 //view the SQL statement
+
+
+py manage.py shell //use the Python interpreter (Python shell) to add some members to it.
+>>> from members.models import Member 
+>>> Member.objects.all() //should give you an empty QuerySet object.A QuerySet is a collection of data from a database.
+>>> member = Member(firstname='Emil', lastname='Refsnes')
+>>> member.save()
+
+>>> Member.objects.all().values() //see if the Member table got a member
+
+
